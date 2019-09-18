@@ -3,6 +3,7 @@ package com.company;
 public class Painting {
 
     public static void main(String[] args) {
+        final int AREA_PER_GALLON = 350;
         int length = 40;
         int width = 32;
         int height = 16;
@@ -13,7 +14,6 @@ public class Painting {
         int area_of_wall1 = length*height;
         int area_of_wall2 = width*height;
         int area_of_ceiling = width*length;
-        final int AREA_PER_GALLON=350;
         double total_surface_area = area_of_wall1*2 + area_of_wall2*2 + area_of_ceiling - (area_of_door*number_of_doors + area_of_window*number_of_windows);
         double total_gallon = total_surface_area/AREA_PER_GALLON;
         System.out.println ("You will need "+total_gallon+" gallons of paint");
