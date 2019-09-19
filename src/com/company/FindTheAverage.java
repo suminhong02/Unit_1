@@ -22,7 +22,7 @@ public class FindTheAverage {
         double value4 = scan.nextDouble();
         total+=value4;
         double average = total/4;
-        System.out.println("Average: "+average);
+        System.out.println("Average= "+average);
 
 
 
